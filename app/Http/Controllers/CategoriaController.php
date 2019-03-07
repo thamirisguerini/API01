@@ -48,7 +48,7 @@ class CategoriaController extends Controller
         {
             return response()->json(['data'=>$categoria, 'status'=>true]);
         }else{
-            return response()->json(['data'=>'Erro ao criar produto','status'=>false]);
+            return response()->json(['data'=>'Erro ao criar categoria','status'=>false]);
         }
     }
 
@@ -66,7 +66,7 @@ class CategoriaController extends Controller
         {
             return response()->json(['data'=>$categoria, 'status'=>true]);
         }else{
-            return response()->json(['data'=>'Produto não existe!','status'=>false]);
+            return response()->json(['data'=>'Categoria não existe!','status'=>false]);
         }
     }
 
