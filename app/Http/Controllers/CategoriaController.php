@@ -48,7 +48,7 @@ class CategoriaController extends Controller
 
         if($categoria)
         {
-            $categoria->produtos()->createMany($produtos);
+            $categoria->produto()->createMany($produtos);
             return response()->json(['data'=>$categoria, 'status'=>true]);
         }else{
             return response()->json(['data'=>'Erro ao criar categoria','status'=>false]);
